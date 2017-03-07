@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4A9F86091E6EDCCE00BCC96D /* XSQMixFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9F86071E6EDCCE00BCC96D /* XSQMixFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A9F86111E6EDD5200BCC96D /* XSQObjectiveCHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9F860F1E6EDD5200BCC96D /* XSQObjectiveCHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A9F86121E6EDD5200BCC96D /* XSQObjectiveCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F86101E6EDD5200BCC96D /* XSQObjectiveCHelper.m */; };
+		4A9F86141E6EDD6500BCC96D /* XSQSwiftHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F86131E6EDD6500BCC96D /* XSQSwiftHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A9F86041E6EDCCE00BCC96D /* XSQMixFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XSQMixFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9F86071E6EDCCE00BCC96D /* XSQMixFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSQMixFramework.h; sourceTree = "<group>"; };
 		4A9F86081E6EDCCE00BCC96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A9F860F1E6EDD5200BCC96D /* XSQObjectiveCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSQObjectiveCHelper.h; sourceTree = "<group>"; };
+		4A9F86101E6EDD5200BCC96D /* XSQObjectiveCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSQObjectiveCHelper.m; sourceTree = "<group>"; };
+		4A9F86131E6EDD6500BCC96D /* XSQSwiftHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSQSwiftHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				4A9F86071E6EDCCE00BCC96D /* XSQMixFramework.h */,
 				4A9F86081E6EDCCE00BCC96D /* Info.plist */,
+				4A9F860F1E6EDD5200BCC96D /* XSQObjectiveCHelper.h */,
+				4A9F86101E6EDD5200BCC96D /* XSQObjectiveCHelper.m */,
+				4A9F86131E6EDD6500BCC96D /* XSQSwiftHelper.swift */,
 			);
 			path = XSQMixFramework;
 			sourceTree = "<group>";
@@ -60,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9F86091E6EDCCE00BCC96D /* XSQMixFramework.h in Headers */,
+				4A9F86111E6EDD5200BCC96D /* XSQObjectiveCHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +106,7 @@
 					4A9F86031E6EDCCE00BCC96D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = S325ATNCH2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9F86141E6EDD6500BCC96D /* XSQSwiftHelper.swift in Sources */,
+				4A9F86121E6EDD5200BCC96D /* XSQObjectiveCHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +250,7 @@
 		4A9F860D1E6EDCCE00BCC96D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = S325ATNCH2;
@@ -249,12 +263,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xsq.XSQMixFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4A9F860E1E6EDCCE00BCC96D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = S325ATNCH2;
@@ -267,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xsq.XSQMixFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -289,6 +307,7 @@
 				4A9F860E1E6EDCCE00BCC96D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

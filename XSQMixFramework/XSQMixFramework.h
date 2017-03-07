@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char XSQMixFrameworkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <XSQMixFramework/PublicHeader.h>
 
 
+#import "XSQObjectiveCHelper.h"
